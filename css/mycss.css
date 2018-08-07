@@ -1,0 +1,124 @@
+body{
+    /* background-image: url('/image/background.jpg'); */
+    color: #000305;
+    font-family: Arial;
+    line-height: 1.5;
+    text-align: left;
+
+}
+.body{
+    margin: 0 auto;
+}
+a{
+    text-decoration:none;
+}
+a:link a:visited{
+
+}
+
+a:hover a:active{
+
+}
+
+.mainHeader nav{
+    background-color: #3B5998;
+    height: 40px;
+    border-radius: 0px;
+    -moz-border-radius:0px;
+    -webkit-border-radius:0px;
+}
+
+.mainHeader nav ul{
+    list-style: none;
+    margin: 0 auto;
+}
+
+.mainHeader nav ul li{
+    float: right;
+    display: inline;
+
+}
+
+.mainHeader nav a:link, .mainHeader nav a:visited{
+    color:#fff;
+    display: inline-block;
+    padding: 10px 25px;
+    height: 20px;
+}
+
+.mainHeader nav a:hover,.mainHeader nav a:active,
+.mainHeader nav .active a:link,.mainHeader nav .active a:visited{
+    background-color: #cf5c3f;
+    text-shadow: none;
+}
+
+.mainHeader nav ul li a{
+    border-radius: 5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+
+.mainContent{
+    line-height: 25px;
+    border-radius: 5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    overflow: hidden;
+
+}
+.content{
+    float: left;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3B5998;
+    height: 40px;
+    border-radius: 0px;
+    -moz-border-radius:0px;
+    -webkit-border-radius:0px;
+    color: white;
+    text-align: center;
+}
+.wrapper{
+    text-align: center;
+    padding: 15% 15% 15% 15%;
+}
+.bt_fb{
+    border-radius: 5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    background-color: #3B5998;
+    color: white;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+}
+.card {
+     /*Add shadows to create the "card" effect*/
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display:inline-block;
+    padding: 0px !important;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+.mainCard{
+    padding: 15px;
+    padding-bottom: 50px;
+}
+.card img{
+    padding: 10px !important;
+    height: 100px;
+    width: 200px !important;
+}
