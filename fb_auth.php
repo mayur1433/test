@@ -11,17 +11,16 @@ $logout = 'http://localhost/rtcamp_test/?logout=true';
 $permissions = []; // optional
 $helper = $fb->getRedirectLoginHelper();
 $accessToken = $helper->getAccessToken();
-if(isset($_GET['logout'])){
+if (isset($_GET['logout'])) {
     unset($_SESSION['fb_access_token']);
 }
-if(isset($_SESSION['fb_access_token'])){
-    $accessToken=$_SESSION['fb_access_token'];
-}else{
-
+if (isset($_SESSION['fb_access_token'])) {
+    $accessToken = $_SESSION['fb_access_token'];
+} else {
 }
 if (isset($accessToken)) {
-    $_SESSION['fb_access_token']=(string)$accessToken;
-    $_SESSION['access_token']=(string)$accessToken;
+    $_SESSION['fb_access_token'] = (string)$accessToken;
+    $_SESSION['access_token'] = (string)$accessToken;
 //    echo $_SESSION['fb_access_token'];
 //    unset($_SESSION['fb_access_token']);
     //header("Location: $loginUrl");
@@ -29,10 +28,8 @@ if (isset($accessToken)) {
     //echo "mayur";
 } else {
     $loginUrl = $helper->getLoginUrl("http://localhost/rtcamp_test/album.php", $permissions);
-    $_SESSION['fb_access_token']=(string)$accessToken;
-    $_SESSION['access_token']=(string)$accessToken;
+    $_SESSION['fb_access_token'] = (string)$accessToken;
+    $_SESSION['access_token'] = (string)$accessToken;
     //echo $accessToken;
     header("Location: $loginUrl");
-
 }
-?>
